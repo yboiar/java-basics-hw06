@@ -17,7 +17,6 @@ public class TemperatureTest {
         {-15, -26.11111111111111},
             {50.0, 10.0},
             {150.00008, 65.5556}
-        // TODO add 2 more test data here
     };
   }
 
@@ -33,7 +32,6 @@ public class TemperatureTest {
         {-26.11111111111111, -15},
             {10.0, 50.0},
             {65.5556, 150.00008}
-        // TODO add 2 more test data here
     };
   }
 
