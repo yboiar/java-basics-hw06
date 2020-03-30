@@ -15,8 +15,8 @@ public class TemperatureTest {
         {212.0, 100.0},
         {32.0, 0.0},
         {-15, -26.11111111111111},
-            {50.0, 10.0},
-            {150.00008, 65.5556}
+        {50.0, 10.0},
+        {150.00008, 65.5556}
     };
   }
 
@@ -30,22 +30,22 @@ public class TemperatureTest {
         {100.0, 212.0},
         {0.0, 32.0},
         {-26.11111111111111, -15},
-            {10.0, 50.0},
-            {65.5556, 150.00008}
+        {10.0, 50.0},
+        {65.5556, 150.00008}
     };
   }
 
   @Test(dataProvider = "Fahrenheit")
   public void testFahrenheitToCelsius(double fahrenheit, double expectedResult) {
-    double actulResult = Temperature.fahrenheitToCelsius(fahrenheit);
+    double actualResult = Temperature.fahrenheitToCelsius(fahrenheit);
 
-    assertEquals(actulResult, expectedResult, "Conversion from Fahrenheit to Celsius is wrong");
+    assertEquals(actualResult, expectedResult, "Conversion from Fahrenheit to Celsius is wrong");
   }
 
   @Test(dataProvider = "Celsius")
   public void testCelsiusToFahrenheit(double celsius, double expectedResult) {
-    double actulResult = Temperature.celsiusToFahrenheit(celsius);
+    double actualResult = Temperature.celsiusToFahrenheit(celsius);
 
-    assertEquals(actulResult, expectedResult, "Conversion from Celsius to Fahrenheit is wrong");
+    assertEquals(actualResult, expectedResult, "Conversion from Celsius to Fahrenheit is wrong");
   }
 }
